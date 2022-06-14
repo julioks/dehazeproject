@@ -11,25 +11,26 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
+    <div id="bgimg"><img id="bgimgimg" src="u1.jpg" alt=""></div>
     <div id="topScrollPt"></div>
     <div id="bottomBarSpace"></div>
     <div class="tbSpace"><img id="u24_img" class="img " src="logo.svg" tabindex="0" style="" onclick="document.getElementById('topScrollPt').scrollIntoView({behavior: 'smooth'});"></div>
     <div class="introSlidesContainer">
         <div class="introSlides">
             <div class="introSlide">
-                <img src="./u3.jpg" alt="">
+                <img class="introSlide_img" src="./u3.jpg" alt="">
             </div>        
             <div class="introSlide">
-                <img src="./u4.jpg" alt="">
+                <img class="introSlide_img" src="./u4.jpg" alt="">
             </div>        
             <div class="introSlide">
-                <img src="./u5.jpg" alt="">
+                <img class="introSlide_img" src="./u5.jpg" alt="">
             </div>        
             <div class="introSlide">
-                <img src="./u6.jpg" alt="">
+                <img class="introSlide_img" src="./u6.jpg" alt="">
             </div>        
             <div class="introSlide">
-                <img src="./u7.jpg" alt="">
+                <img class="introSlide_img" src="./u7.jpg" alt="">
             </div>
            
         </div>
@@ -118,39 +119,71 @@
 </div>
 <div id="musicSection">
     <div id="musicSection_r1"class="Section_r">
-<div id="musicBlk1">
-    <h3 id="musicBlk1_h">
-        Picture perfect love
-    </h3>
-    <div id="musicBlk1_tb"class="Blk_tb">picture-perfect love <br>
-
-        Am I not good enough?<br>
+        <div id="mss1" class="mss">
+        <div id="musicBlk1">
+            <h3 id="musicBlk1_h">
+                Picture perfect love
+            </h3>
+            <div id="musicBlk1_tb"class="Blk_tb">picture-perfect love <br>
         
-        picture, lonely's what people know me for<br>
+                Am I not good enough?<br>
+                
+                picture, lonely's what people know me for<br>
+                
+                that's what's scaring me.<br>
+                
+                jealous of picture-perfect love<br>
+                
+                it seems so out of touch<br>
+                
+                I picture driving until the night sings<br>
+                
+                knowing my love sleeps.</div>
+        </div>
         
-        that's what's scaring me.<br>
+        <div id="musicBlk2">
+            <div id="musicBlk2_tb"class="Blk_tb">Sjors de Haas started his songwriting study at the Rock Academy in 2020. In order to earn his place, he took classes at the RAAC (Rock Academy Audition Coaching) for a year.<br> <br>
         
-        jealous of picture-perfect love<br>
         
-        it seems so out of touch<br>
         
-        I picture driving until the night sings<br>
+                He has been coached by David Koster.</div>
+            </div>
         
-        knowing my love sleeps.</div>
-</div>
-
-<div id="musicBlk2">
-    <div id="musicBlk2_tb"class="Blk_tb">Sjors de Haas started his songwriting study at the Rock Academy in 2020. In order to earn his place, he took classes at the RAAC (Rock Academy Audition Coaching) for a year.<br> <br>
-
-
-
-        He has been coached by David Koster.</div>
-    </div>
-
-<div id="musicBlk3">
-    <img class="blk_img" id="musicBlk3_img" src="./song-1-image_u16.jpg"  alt="">
-</div>
-</div>
+        <div id="musicBlk3">
+            <img class="blk_img" id="musicBlk3_img" src="./song-1-image_u16.jpg"  alt="">
+        </div></div><div class="mss" id="mss2"><div id="musicBlk1">
+            <h3 id="musicBlk1_h">
+                Picture perfect love
+            </h3>
+            <div id="musicBlk1_tb"class="Blk_tb">picture-perfect love <br>
+        
+                Am I not good enough?<br>
+                
+                picture, lonely's what people know me for<br>
+                
+                that's what's scaring me.<br>
+                
+                jealous of picture-perfect love<br>
+                
+                it seems so out of touch<br>
+                
+                I picture driving until the night sings<br>
+                
+                knowing my love sleeps.</div>
+        </div>
+        
+        <div id="musicBlk2">
+            <div id="musicBlk2_tb"class="Blk_tb">Sjors de Haas started his songwriting study at the Rock Academy in 2020. In order to earn his place, he took classes at the RAAC (Rock Academy Audition Coaching) for a year.<br> <br>
+        
+        
+        
+                He has been coached by David Koster.</div>
+            </div>
+        
+        <div id="musicBlk3">
+            <img class="blk_img" id="musicBlk3_img" src="./song-1-image_u16.jpg"  alt="">
+        </div>
+</div></div>
 <div id="musicSection_r2"class="Section_r">
 
 <div id="musicBlk4">
@@ -192,6 +225,23 @@
         </h3>
 <div class="productionSongbuilder">
    <h3> Under integration, check back later</h3>
+   <div class="sbTopPart">
+    <div class="sbtopBpm">
+    <input class="sbtopInput" type="number" size="3" value="120"  onchange="changeBpm(this)">
+      
+  </input>
+</div>
+    <div class="sbtopPlayBtn" onclick="play()">
+      Play
+    </div>
+    <div class="sbStopKey" onclick="stop()">Stop</div>
+
+    
+    
+    <script src="uitest.js" defer>
+        
+    </script>
+   </div>
 </div>
 </div>
 </div>
@@ -242,6 +292,30 @@
 </div>
 <div id="contactSection">
     <h3>Under Construction, check back later</h3>
+    <div id="contactSection_r1"class="Section_r">
+        <div id="contactBlk1">
+            <h3 id="contactBlk1_h">
+                Contact me 
+            </h3>
+            <div id="contactBlk1_tb"class="Blk_tb">Name<br>
+        
+                <input type="text" class="contactBlk1_input"><br>E-mail  <br>  
+        
+                <input type="text" class="contactBlk1_input"><br>Subject <br>
+        
+                <input type="text" class="contactBlk1_input"></div>
+        </div>
+        
+        <div id="contactBlk2">
+            <div id="contact_tb"class="Blk_tb">Message <br>
+        
+                <input type="text" class="contactBlk2_input"></div>
+            </div>
+        
+        <div id="contactBlk3">
+            <img class="blk_img" id="contactBlk3_img" src="./u62.jpg"  alt="">
+        </div>
+        </div>
 </div>
 <div id="socialsBar" class="bar">
     <div id="socialsBarInner"onclick="console.log('iklikaboot')">
