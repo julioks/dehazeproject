@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
 <head>
   <title>DEHAZE</title>
   <meta charset="UTF-8" />
@@ -47,6 +47,10 @@
     <div id="aboutScrollPt"></div>
     <div id="aboutBar" class="bar">
         <div id="aboutBarInner" class="barInner" onclick="document.getElementById('aboutScrollPt').scrollIntoView({behavior: 'smooth'});">
+            ABOUT
+        </div><div id="aboutBarInnerGhostt" class="barInner" onclick="document.getElementById('aboutScrollPt').scrollIntoView({behavior: 'smooth'});">
+            ABOUT
+        </div><div id="aboutBarInnerGhostb" class="barInner" onclick="document.getElementById('aboutScrollPt').scrollIntoView({behavior: 'smooth'});">
             ABOUT
         </div>
     </div>
@@ -115,6 +119,10 @@
 <div id="musicBar" class="bar">
     <div id="musicBarInner" class="barInner" onclick="document.getElementById('musicScrollPt').scrollIntoView({behavior: 'smooth'});">
         MUSIC
+    </div> <div id="musicBarInnerGhostt" class="barInner" onclick="document.getElementById('musicScrollPt').scrollIntoView({behavior: 'smooth'});">
+        MUSIC
+    </div> <div id="musicBarInnerGhostb" class="barInner" onclick="document.getElementById('musicScrollPt').scrollIntoView({behavior: 'smooth'});">
+        MUSIC
     </div>
 </div>
 <div id="musicSection">
@@ -142,11 +150,11 @@
         </div>
         
         <div id="musicBlk2">
-            <div id="musicBlk2_tb"class="Blk_tb">Sjors de Haas started his songwriting study at the Rock Academy in 2020. In order to earn his place, he took classes at the RAAC (Rock Academy Audition Coaching) for a year.<br> <br>
+            <div id="musicBlk2_tb"class="Blk_tb"><br> <br>
         
         
         
-                He has been coached by David Koster.</div>
+            </div>
             </div>
         
         <div id="musicBlk3">
@@ -173,17 +181,26 @@
         </div>
         
         <div id="musicBlk2">
-            <div id="musicBlk2_tb"class="Blk_tb">Sjors de Haas started his songwriting study at the Rock Academy in 2020. In order to earn his place, he took classes at the RAAC (Rock Academy Audition Coaching) for a year.<br> <br>
+            <div id="musicBlk2_tb"class="Blk_tb"><br> <br>
         
         
         
-                He has been coached by David Koster.</div>
+               </div>
             </div>
         
         <div id="musicBlk3">
             <img class="blk_img" id="musicBlk3_img" src="./song-1-image_u16.jpg"  alt="">
         </div>
 </div></div>
+<div class="musicSlidesNav">
+    <div class="mslidePointer" id="mis_back" onclick="mchangeSlidebk()">
+        <
+    </div>
+    <div id="mis_fwd" onclick="mchangeSlidefw()">
+        >
+    </div>
+</div>
+</div>
 <div id="musicSection_r2"class="Section_r">
 
 <div id="musicBlk4">
@@ -215,6 +232,10 @@
 <div id="productionBar" class="bar">
     <div id="productionBarInner" class="barInner" onclick="document.getElementById('productionScrollPt').scrollIntoView({behavior: 'smooth'});">
         PRODUCTION
+    </div>    <div id="productionBarInnerGhostt" class="barInner" onclick="document.getElementById('productionScrollPt').scrollIntoView({behavior: 'smooth'});">
+        PRODUCTION
+    </div>    <div id="productionBarInnerGhostb" class="barInner" onclick="document.getElementById('productionScrollPt').scrollIntoView({behavior: 'smooth'});">
+        PRODUCTION
     </div>
 </div>
 <div id="productionSection">
@@ -224,7 +245,6 @@
             Songbuilder
         </h3>
 <div class="productionSongbuilder">
-   <h3> Under integration, check back later</h3>
    <div class="sbTopPart">
     <div class="sbtopBpm">
     <input class="sbtopInput" type="number" size="3" value="120"  onchange="changeBpm(this)">
@@ -288,10 +308,13 @@
 <div id="contactBar" class="bar">
     <div id="contactBarInner" class="barInner" onclick="document.getElementById('contactScrollPt').scrollIntoView({behavior: 'smooth'});">
         CONTACT
+    </div>   <div id="contactBarInnerGhostt" class="barInner" onclick="document.getElementById('contactScrollPt').scrollIntoView({behavior: 'smooth'});">
+        CONTACT
+    </div>   <div id="contactBarInnerGhostb" class="barInner" onclick="document.getElementById('contactScrollPt').scrollIntoView({behavior: 'smooth'});">
+        CONTACT
     </div>
 </div>
 <div id="contactSection">
-    <h3>Under Construction, check back later</h3>
     <div id="contactSection_r1"class="Section_r">
         <div id="contactBlk1">
             <h3 id="contactBlk1_h">
@@ -309,8 +332,10 @@
         <div id="contactBlk2">
             <div id="contact_tb"class="Blk_tb">Message <br>
         
-                <input type="text" class="contactBlk2_input"></div>
-            </div>
+                <input type="text" class="contactBlk2_input">
+                <button id="contactSendBtn">SEND MESSAGE</button>
+           
+            </div> </div>
         
         <div id="contactBlk3">
             <img class="blk_img" id="contactBlk3_img" src="./u62.jpg"  alt="">

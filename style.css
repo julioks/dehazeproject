@@ -15,26 +15,27 @@ box-sizing: border-box;         /* Opera/IE 8+ */
     position: fixed;
 }#bgimgimg
     {
-        max-height: 1752px;
-        top: -592px;
+        max-height: 800vh;
+        min-height: 200vh;
+        top:-60vh;
         position: relative;
     }
 
 img{
     width: inherit;
 }
-#is_fwd{
+#is_fwd,#mis_fwd{
     position: relative;
     right: 2vw;
 }
-#is_fwd:hover{
+#is_fwd:hover,#mis_fwd:hover{
     color: rgb(153, 102, 204);
    
-}#is_back{
+}#is_back,#mis_back{
     position: relative;
     left: 2vw;
 }
-#is_back:hover{
+#is_back:hover,#mis_back:hover{
     color: rgb(153, 102, 204);
    
 }
@@ -69,8 +70,9 @@ height: 100%;
 
 align-items: center;
 }#musicSection_r1{
+    transition-duration: 1.5s;
+    transition-delay: 0s;
     position: relative;
-    left: calc(-100vw + 11.5vw);
 }
 #u24_img {
     z-index: 14;
@@ -103,6 +105,7 @@ margin-inline-end: 11.5vw;}
     background-color: #d6076f0b
 }
 #musicSection{
+    position: relative;
     overflow: hidden;
     background-color: rgba(17, 177, 36, 0.129);
 }#productionSection{
@@ -118,11 +121,27 @@ margin-inline-end: 11.5vw;}
     align-content: space-around;
 }
 .contactBlk1_input{
+    background-color: rgba(95, 0, 49, 0.604);
+    color: inherit;
+    border: none;
     width: 100%;
     height: 15%;
-}.contactBlk2_input{
+}.contactBlk2_input{background-color:  rgba(95, 0, 49, 0.604);
+    color: inherit;
+    border: none;
     width: 100%;
-    height: 75%;
+    height: 65%;
+}
+.sbPartSelector *{color: #555;
+
+}
+.musicSlidesNav{
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    font-size: 100px;
+    top: 45%;
 }
 .bar{
     width: min-content;
@@ -136,9 +155,8 @@ margin-inline-end: 11.5vw;}
     color: rgb(153, 102, 204);
 }
 .barInner{
-    font-weight: 700;
+    font-weight: 900;
     position: relative;
-    right: -17.5%;
     width: fit-content;
     font-size: 15.625px;
 }
@@ -147,6 +165,74 @@ margin-inline-end: 11.5vw;}
  
     left: 22.5vw;
     z-index: 10;
+}
+#aboutBarInnerGhostt{
+
+    color: #555;
+    font-weight: 400;
+    position: fixed;
+    top: 0;
+    left: 22.5vw;
+    padding-block: calc((10vh - 20px)/2);
+}#aboutBarInnerGhostb{
+
+    color: #555;
+    font-weight: 400;
+    position: fixed;
+    bottom: 0;
+    left: 22.5vw;
+    padding-block: calc((10vh - 20px)/2);
+}#musicBarInnerGhostb{
+
+    color: #555;
+    font-weight: 400;
+    position: fixed;
+    bottom: 0;
+    left: 32.5vw;
+    padding-block: calc((10vh - 20px)/2);
+}#musicBarInnerGhostt{
+
+    color: #555;
+    font-weight: 400;
+    position: fixed;
+    top: 0;
+    left: 32.5vw;
+    padding-block: calc((10vh - 20px)/2);
+}
+
+#productionBarInnerGhostt{
+
+    color: #555;
+    font-weight: 400;
+    position: fixed;
+    top: 0;
+    left: 62.5vw;
+    padding-block: calc((10vh - 20px)/2);
+}#productionBarInnerGhostb{
+
+    color: #555;
+    font-weight: 400;
+    position: fixed;
+    bottom: 0;
+    left: 62.5vw;
+    padding-block: calc((10vh - 20px)/2);
+}
+#contactBarInnerGhostb{
+
+    color: #555;
+    font-weight: 400;
+    position: fixed;
+    bottom: 0;
+    left: 72.5vw;
+    padding-block: calc((10vh - 20px)/2);
+}#contactBarInnerGhostt{
+
+    color: #555;
+    font-weight: 400;
+    position: fixed;
+    top: 0;
+    left: 72.5vw;
+    padding-block: calc((10vh - 20px)/2);
 }
 #aboutBarInner{
 
@@ -177,6 +263,10 @@ font-size: 16px;
     top: 60px;
     width: 25vw;
     height: 25vw;
+    object-fit: cover;
+}
+#contactSection{
+    margin-block-end: 15vh;
 }
 .Section_r{
     display: flex;
@@ -234,10 +324,21 @@ font-size: 16px;
     z-index: 11;
     
 }
-
+#contactSendBtn{
+    border: none;
+    background-color: rgba(153, 102, 204, 0.6588235294117647);
+    width: 50%;
+    height: 12.5%;
+    border-radius: 5px;
+    color: white;
+  font-family: "Raleway Bold", "Raleway", sans-serif;
+    font-weight: 700;
+}
+#productionBlk1{
+    width: 100%;
+}
 .productionSongbuilder{
     background-color: rgba(95, 0, 49, 0.6039215686274509);
-    width: 70vw;
     height: fit-content;
     font-style: italic;
     padding: 2.5vw;
@@ -287,21 +388,23 @@ overflow: hidden;
             background-color: transparent;
             border: none;
             border-bottom: 1px solid #555;
+            
             color: inherit;
             font: inherit;
             text-overflow: ellipsis;
         }
         .sbPartSelector{
             width: 100%;
+            height: 5vh;
 
         }
-        .sbTopPart{display: flex;}
+        .sbTopPart{display: flex; margin-block-end: 5vh;}
         .sbStopKey{position: relative;
         }.sbtopPlayBtn,.sbtopInput,.sbStopKey,.sbtopBpm{
             width: 33%;
     text-align: center;
     border-bottom: 1px solid #555;
-
+    
         }
         .sbtopInput{
             width: 100%;
